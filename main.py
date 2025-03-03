@@ -5,8 +5,9 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 
-URL = "https://appbrewery.github.io/instant_pot/"
-response = requests.get(URL)
+practice_url = "https://appbrewery.github.io/instant_pot/"
+live_url = "https://www.amazon.com/dp/B075CYMYK6?psc=1&ref_=cm_sw_r_cp_ud_ct_FM9M699VKHTT47YD50Q6"
+response = requests.get(live_url)
 response.raise_for_status()
 webpage = response.text
 
